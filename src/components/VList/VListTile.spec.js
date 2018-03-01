@@ -18,7 +18,7 @@ test('VListTile.vue', ({ mount }) => {
     })
 
     expect(wrapper.is('div')).toBe(true)
-    expect(wrapper.find('div')).toHaveLength(1)
+    expect(wrapper.find('div')).toHaveLength(2)
     expect(wrapper.find('a')).toHaveLength(0)
     expect(wrapper.find('.list__tile--link')).toHaveLength(0)
   })
@@ -38,7 +38,7 @@ test('VListTile.vue', ({ mount }) => {
     const wrapper = mount(VListTile)
 
     expect(wrapper.is('div')).toBe(true)
-    expect(wrapper.find('div')).toHaveLength(1)
+    expect(wrapper.find('div')).toHaveLength(2)
     expect(wrapper.html()).toMatchSnapshot()
   })
 
